@@ -27,7 +27,8 @@ function addTodo() {
 
     document.getElementById('todolistContent').innerHTML += arr[index1++];
     document.getElementById('inputModal').style = `display: none;`
-    console.log(arr)
+    input.value='';
+    date.value='';
 
 }
 
