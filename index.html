@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>TodoList</title>
+</head>
+
+<body>
+    <div class="header">
+        <h2>Todo List</h2>
+        <button type="button" id="add">ADD</button>
+    </div>
+
+    <div id="todolist">
+        <div id="todolistContent">
+            
+        </div>
+    </div>
+
+
+    <div id="inputModal" style="display: none;">
+        <form id="inputModalContent">
+            <h2>ADD</h2>
+            <div class="inputBody">
+                <input type="text" id="todo" required placeholder="">
+                <label for="todo">Enter your todo</label>
+            </div>
+            <input type="date" id="date" required>
+            <div class="btnBody">
+                <button type="submit">Submit</button>
+                <button>Cancel</button>
+            </div>
+            
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+.header {
+    background-color: black;
+    padding: 1px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.header button {
+    position: absolute;
+    right: 1%;
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(202, 63, 63);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+#inputModal {
+    background-color: rgba(0, 0, 0, 0.425);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    text-align: center;
+}
+
+
+#inputModal #inputModalContent {
+    margin: auto;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 0px black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+#inputModal #inputModalContent .inputBody {
+
+    display: flex;
+    align-items: center;
+}
+
+#inputModal #inputModalContent .inputBody label {
+    position: absolute;
+    margin-left: 10px;
+    transition: .2s;
+}
+
+#inputModal #inputModalContent .inputBody input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#inputModal #inputModalContent .inputBody input:focus~label,
+#inputModal #inputModalContent .inputBody input:not(:placeholder-shown)~label {
+
+    transform: translate(10px, -20px);
+    background-color: white;
+    padding: 0px 7px;
+    font-size: 14px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#date {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#inputModal #inputModalContent .btnBody {
+    width: 100%;
+
+    display: flex;
+    gap: 5px;
+}
+
+#inputModal #inputModalContent .btnBody button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+#inputModal #inputModalContent .btnBody button:first-child {
+    background-color: rgb(202, 63, 63);
+}
+
+#inputModal #inputModalContent .btnBody button:last-child {
+    background-color: rgb(158, 158, 158);
+}
+
+#todolist {
+    display: flex;
+    height: auto;
+    padding: 5px;
+    flex-direction: column;
+}
+
+#todolist #todolistContent {
+    background-color: rgb(255, 255, 255);
+    height: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#todolist #todolistContent div {
+    padding: 10px 5px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px black;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#todolist #todolistContent label {
+    word-wrap: break-word;
+    width: 40%;
+}
+
+
+
+
+
+#todolist #todolistContent button {
+    background-color: rgb(202, 63, 63);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 30%;
+}
